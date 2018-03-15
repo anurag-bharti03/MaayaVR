@@ -8,7 +8,7 @@ public class HomePageScript : MonoBehaviour {
 
     public GameObject HomeSphere;
     public GameObject MainVideoPlane;
-  // public GvrReticlePointer gvrReticlePointer;
+    public GvrReticlePointer gvrReticlePointer;
   // public GvrEditorEmulator gvrEditorEmulator;
 
     public UnityEngine.Video.VideoPlayer videoMahamastabhisheka;
@@ -18,8 +18,8 @@ public class HomePageScript : MonoBehaviour {
     bool isMahamastabhishekaVideo;
     MahamastabhishekaScript script1;
     BahubaliScript script2;
-    EventTriggerLordBahubali script3;
-    EventTriggerMahamastabhishekaScript script4;
+    MahaEventTriggerScript script3;
+    BahubaliEventTriggerScript script4;
 
     private bool isLookedAtBahubali = false;
     private bool isLookedAtMahamastabhisheka = false;
@@ -53,18 +53,19 @@ public class HomePageScript : MonoBehaviour {
 
         if(ToggleVR1.IsVRMode)
         {
-            //script1 = MahamastabhishekaPlane.AddComponent<MahamastabhishekaScript>();
-            //script2 = LordBahubaliPlane.AddComponent<BahubaliScript>();
-            //script3 = LordBahubaliPlane.AddComponent<EventTriggerLordBahubali>();
-            //script4 = MahamastabhishekaPlane.AddComponent<EventTriggerMahamastabhishekaScript>();
+           // script1 = MahamastabhishekaPlane.AddComponent<MahamastabhishekaScript>();
+           // script2 = LordBahubaliPlane.AddComponent<BahubaliScript>();
+            script4 = LordBahubaliPlane.AddComponent<BahubaliEventTriggerScript>();
+            script3 = MahamastabhishekaPlane.AddComponent<MahaEventTriggerScript>();
            // gvrEditorEmulator.enabled = true;
-          //  gvrReticlePointer.enabled = true;
+            gvrReticlePointer.enabled = true;
+            Debug.Log("VR mode enabled");
         }
 
         else
         {
           //  gvrEditorEmulator.enabled = false;
-           // gvrReticlePointer.enabled = false;
+            gvrReticlePointer.enabled = false;
             if (isLordBahubaliVideo || isMahamastabhishekaVideo)
             {
 

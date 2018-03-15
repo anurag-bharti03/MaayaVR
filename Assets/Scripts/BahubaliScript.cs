@@ -26,14 +26,19 @@ public class BahubaliScript : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        LordBahubaliPlane = GameObject.FindGameObjectWithTag("LordBahubaliPlane");
-        VideoSphere = GameObject.FindGameObjectWithTag("VideoSphere");
+       // LordBahubaliPlane = GameObject.FindGameObjectWithTag("LordBahubaliPlane");
+       // VideoSphere = GameObject.FindGameObjectWithTag("VideoSphere");
        // videoBahubali = HomePageScript.videoLordBahubali;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+                StopLordBahubaliVideo();
+        }
+
         GazeDelay();
     }
 
@@ -73,10 +78,10 @@ public class BahubaliScript : MonoBehaviour {
 
     public void PlayNandiVideo()
     {
+        Debug.Log("Bahubali Script Played");
         isLordBahubaliVideo = true;
-        StartCoroutine(ShowMainVideoPlane());
-
         videoBahubali.Play();
+        StartCoroutine(ShowMainVideoPlane());
     }
 
     public IEnumerator HideMainVideoPlane()
@@ -88,5 +93,14 @@ public class BahubaliScript : MonoBehaviour {
     {
         VideoSphere.SetActive(true);
         yield return new WaitForEndOfFrame();
+    }
+
+    public void StopLordBahubaliVideo()
+    {
+        if (videoBahubali.isPlaying)
+        {
+            videoBahubali.Stop();
+        }
+        StartCoroutine(HideMainVideoPlane());
     }
 }

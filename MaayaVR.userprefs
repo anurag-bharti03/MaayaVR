@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{8601EC46-E50E-F757-17C1-D77EF1BA5960}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BahubaliScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Shaders/SphereShader.shader">
     <Files>
       <File FileName="Assets/Shaders/SphereShader.shader" Line="1" Column="1" />
       <File FileName="Assets/Scripts/HomePageScript.cs" Line="7" Column="11" />

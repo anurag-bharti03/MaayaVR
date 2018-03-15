@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{B0981806-7710-A7B2-13BF-7770D9D1616D}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MahamastabhishekaScript.cs">
+    <Files>
+      <File FileName="Assets/Scripts/HomePageScript.cs" Line="57" Column="14" />
+      <File FileName="Assets/Scripts/BahubaliScript.cs" Line="74" Column="18" />
+      <File FileName="Assets/Scripts/MahamastabhishekaScript.cs" Line="63" Column="18" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.MaayaVR__1 PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

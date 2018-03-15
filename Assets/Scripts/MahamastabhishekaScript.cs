@@ -28,14 +28,16 @@ public class MahamastabhishekaScript : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        MahamastabhishekaPlane = GameObject.FindGameObjectWithTag("MahamastkabhishekaPlane");
-        VideoSphere = GameObject.FindGameObjectWithTag("VideoSphere");
-       // videoMahamastabhisheka = HomePageScript.videoMahamastabhisheka;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            StopMahamastabhishekaVideo();
+        }
+
         GazeDelay();
     }
 
@@ -63,32 +65,37 @@ public class MahamastabhishekaScript : MonoBehaviour {
         isLookedAtMahamastabhisheka = gazedAt;
     }
 
-    public void PlayNandiVideo()
-    {
-        isNandiVideo = true;
-        videoNandi.Play();
-        StartCoroutine(ShowMainVideoPlane());
-    }
+    //public void PlayNandiVideo()
+    //{
+    //    isNandiVideo = true;
+    //    videoNandi.Play();
+    //    StartCoroutine(ShowMainVideoPlane());
+    //}
 
-    public void StopNandiVideo()
-    {
-        isNandiVideo = false;
-        videoNandi.Stop();
+    //public void StopNandiVideo()
+    //{
+    //    isNandiVideo = false;
+    //    videoNandi.Stop();
 
-        StartCoroutine(HideMainVideoPlane());
-        videoMahamastabhisheka.Play();
-    }
+    //    StartCoroutine(HideMainVideoPlane());
+    //    videoMahamastabhisheka.Play();
+    //}
 
     public void PlayMahamastabhishekaVideo()
     {
+        Debug.Log("Maha Script");
         isMahamastabhishekaVideo = true;
+        videoMahamastabhisheka.Play();
         StartCoroutine(ShowMainVideoPlane());
     }
 
     public void StopMahamastabhishekaVideo()
     {
-        isMahamastabhishekaVideo = false;
-        videoMahamastabhisheka.Stop();
+        if (videoMahamastabhisheka.isPlaying)
+        {
+            videoMahamastabhisheka.Stop();
+        }
+
         StartCoroutine(HideMainVideoPlane());
     }
 

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio for Mac
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaayaVR_1", "MaayaVR_1.csproj", "{B0981806-7710-A7B2-13BF-7770D9D1616D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaayaVR_1.Editor", "MaayaVR_1.Editor.csproj", "{6934FE78-C24D-EABF-0D16-11F98529F985}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0981806-7710-A7B2-13BF-7770D9D1616D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0981806-7710-A7B2-13BF-7770D9D1616D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0981806-7710-A7B2-13BF-7770D9D1616D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0981806-7710-A7B2-13BF-7770D9D1616D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6934FE78-C24D-EABF-0D16-11F98529F985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6934FE78-C24D-EABF-0D16-11F98529F985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6934FE78-C24D-EABF-0D16-11F98529F985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6934FE78-C24D-EABF-0D16-11F98529F985}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
